@@ -1,0 +1,1404 @@
+/*----- General Styling Start -----*/
+
+@import url('../fonts/stylesheet.css');
+
+:root {
+    --primaryColor: #0D5CAB;
+    --secondaryColor: #F01414;
+}
+
+body {
+    font-family: 'Gilroy';
+    font-weight: 500;
+}
+
+.primaryColor {
+    color: var(--primaryColor);
+}
+
+.secondaryColor {
+    color: var(--secondaryColor);
+}
+
+.primaryBg {
+    background: var(--primaryColor);
+}
+
+.secondaryBg {
+    background: var(--secondaryColor);
+}
+
+.green {
+    color: #00E10F;
+}
+
+.red {
+    color: #ff0000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #e0e0e0;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primaryColor);
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primaryColor);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'League Spartan';
+}
+
+section {
+    position: relative;
+}
+
+.notButton {
+    background: none;
+    border: none;
+}
+
+.imageBg {
+    background: url('../images/aboutbg.png') #fff;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.lightBg {
+    background: #F2FCFF;
+}
+
+.headingBar {
+    display: inline-block;
+    position: relative;
+}
+
+.headingBar::before {
+    content: '';
+    position: absolute;
+    background: var(--secondaryColor);
+    left: -10px;
+    top: -20px;
+    width: 3px;
+    height: 60%;
+}
+
+.headingBar::after {
+    content: '';
+    position: absolute;
+    background: var(--secondaryColor);
+    left: -20px;
+    top: -10px;
+    width: 60%;
+    height: 3px;
+}
+
+.sectionTitle {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.siteList li {
+    position: relative;
+    left: -1rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.siteList li::marker {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    color: var(--secondaryColor);
+    font-size: 1rem;
+}
+
+
+.moreLink {
+    font-size: 15px;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+.moreLink i {
+    color: var(--primaryColor);
+    margin-left: 0.5rem;
+    transition: 0.3s linear;
+}
+
+/*----- General Styling End -----*/
+
+
+
+
+
+/*----- Button Styling Start -----*/
+
+.mainButton {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 99px;
+    padding: 15px 35px;
+    position: relative;
+    transition: 0.3s linear;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.mainButton::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    left: -80%;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    transform: rotate(-45deg);
+    opacity: 0.2;
+    transition: 0.3s linear;
+}
+
+.mainButton:hover::before {
+    left: 80%;
+}
+
+.primaryButton {
+    background: var(--primaryColor);
+    color: #fff !important;
+    border-color: #0080FF;
+}
+
+.secondaryButton {
+    background: var(--secondaryColor);
+    color: #fff !important;
+    border-color: var(--secondaryColor);
+}
+
+/*----- Button Styling End -----*/
+
+
+
+
+
+/*----- Form Styling Start -----*/
+
+.mainInputBox {
+    margin-bottom: 1rem;
+}
+
+.mainLabel {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.mainInput {
+    background-color: #f5f5f5 !important;
+    font-weight: 400;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #E8E8E8;
+    border-radius: 99px;
+    box-shadow: -1px 5px 8px #f014142b;
+    resize: none;
+    position: relative;
+    width: 100%;
+    appearance: none;
+    margin-bottom: 4px;
+}
+
+.mainInput::placeholder {
+    color: #666;
+}
+
+.mainInput:focus, select.mainInput:focus {
+    outline: 0 !important
+}
+
+select.mainInput {
+    outline: none;
+    appearance: auto;
+}
+
+textarea.mainInput {
+    border-radius: 10px;
+}
+
+/*----- Form Styling End -----*/
+
+
+
+
+
+/*----- Header Styling Start -----*/
+
+header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.userHeader .authBox {
+    display: none;
+}
+
+.guestHeader .userBox {
+    display: none;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+
+.navSide {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+}
+
+.navSide .nav-link {
+    display: block;
+    width: 100%;
+    color: #fff !important;
+    text-align: left;
+    padding-left: 1rem !important;
+}
+
+.navButton {
+    display: block;
+    background: none;
+    border: none;
+}
+
+.authBox {
+    border: 1px solid #0080FF;
+    border-radius: 99px;
+    overflow: hidden;
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+.authButton {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem !important;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.authButton:hover {
+    color: #fff;
+}
+
+.userBox {
+    display: flex;
+    align-items: center;
+}
+
+.userButton {
+    color: #fff;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 99px;
+}
+
+.avatar img {
+    border-radius: 99px !important;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.notificationButton {
+    color: #fff;
+    font-size: 24px;
+}
+
+.offcanvasButton {
+    background: #0d5cab;
+    color: #fff !important;
+    border: 2px solid #0080ff !important;
+    margin: 0rem 0.5rem;
+}
+
+.offcanvasButton:focus {
+    box-shadow: none;
+}
+
+.navSide .offcanvas.show {
+    background: var(--primaryColor);
+    color: #fff;
+}
+
+.navSide .offCanvasClose {
+    background-image: none !important;
+    background: #fff;
+    opacity: 1;
+    border-radius: 99px;
+    color: var(--primaryColor) !important;
+    line-height: 1rem;
+    transition: 0.3s linear;
+}
+
+.navSide .offCanvasClose:hover {
+    transform: rotate(360deg);
+}
+
+.navSide .dropdown-menu {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 0;
+}
+
+.navSide .dropend .dropdown-menu {
+    margin-left: 0.3rem;
+}
+
+.navSide .dropend .dropdown-toggle::after {
+    transform: rotate(90deg);
+    transition: 0.3s linear;
+}
+
+.navSide .dropend .dropdown-toggle.show::after {
+    transform: rotate(0deg);
+}
+
+.navSide .dropdown-item {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: 0.3s linear;
+}
+
+.navSide .dropdown-item:focus, .navSide .dropdown-item:hover {
+    color: #fff;
+    background-color: var(--primaryColor);
+}
+
+.navSide .offcanvas.show .dropdown-menu {
+    border: none;
+    background: #fff0;
+}
+
+.navSide .offcanvas.show .dropdown-item {
+    font-size: 14px;
+    color: #fff;
+    border-bottom: none !important;
+    text-indent: 1rem;
+    padding: 0.2rem 1rem;
+}
+
+/*----- Header Styling End -----*/
+
+
+
+
+
+/*----- Footer Styling Start -----*/
+
+footer {
+    color: #fff;
+    text-align: center;
+}
+
+.mainFooter {
+    background: #1A1A1A;
+    padding: 4rem 0rem;
+}
+
+.newsletter {
+    position: relative;
+    border: 2px solid var(--primaryColor);
+    border-radius: 99px;
+    padding: 0.4rem 0rem;
+}
+
+.newsletter input {
+    background-color: #fff0;
+    font-weight: 400;
+    padding: 12px 200px 12px 15px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    resize: none;
+    position: relative;
+    width: 100%;
+    appearance: none;
+}
+
+.newsletter input::placeholder {
+    color: #fff;
+}
+
+.newsletter input:focus {
+    outline: 0 !important
+}
+
+.newsletter button {
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0.2rem;
+}
+
+.copyright {
+    background: #000;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.copyright p {
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+}
+
+/*----- Footer Styling End -----*/
+
+
+
+
+
+/*----- Page Banner Styling Start -----*/
+
+.pageBanner {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 40px;
+    color: #fff;
+    background: url(../images/pageBanner.png);
+}
+
+.pageBannerTitle {
+    font-size: 34px;
+}
+
+/*----- Page Banner Styling End -----*/
+
+
+
+
+
+/*----- Banner Styling Start -----*/
+
+.banner {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 160px;
+}
+
+.banner .owl-carousel .item {
+    padding: 1rem ! important;
+}
+
+.banner .owl-dots {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.banner .owl-dots .owl-dot span {
+    background: var(--secondaryColor);
+    border-radius: 99px;
+    transition: 0.3s linear;
+}
+
+.banner .owl-dots .owl-dot.active span {
+    width: 30px;
+    background: var(--primaryColor);
+}
+
+.banner .owl-dots .owl-dot:hover span {
+    background: var(--primaryColor);
+}
+
+.bannerContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sliderContent {
+    color: #fff;
+}
+
+.bannerHeading {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.bannerHeading span {
+    font-weight: 300;
+}
+
+
+/*----- Banner Styling End -----*/
+
+
+
+
+
+/*----- About Styling Start -----*/
+
+.about {
+    background: url('../images/aboutbg.png') #fff;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+.aboutImage {
+    height: 370px;
+    width: 320px;
+    display: inline-block;
+}
+
+.aboutImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutImage1 {
+    position: relative;
+    z-index: 1;
+}
+
+.aboutImage2 {
+    border: 10px solid #DFEFFF;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    z-index: 2;
+    transform: translateX(50%);
+}
+
+.aboutCard {
+    text-align: center;
+    box-shadow: -1px 5px 8px #dbedff;
+    border: 2px solid #DBEDFF;
+    border-radius: 1rem;
+    position: relative;
+    margin: 1rem 0rem;
+}
+
+.aboutCard::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    background: url(../images/aboutCorner.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    transition: 0.3s linear;
+}
+
+.aboutCard:hover::before {
+    filter: hue-rotate(140deg);
+    transform: scale(1.1);
+}
+
+.aboutCard::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: var(--secondaryColor);
+    width: 90px;
+    height: 90px;
+    border-radius: 19px;
+    transition: 0.3s linear;
+}
+
+.aboutCard:hover::after {
+    width: 120px;
+    height: 120px;
+}
+
+.aboutCardContent {
+    background: #F8FAFB;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s linear;
+}
+
+.aboutCard img {
+    width: auto;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s linear;
+}
+
+.aboutCardTitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primaryColor);
+    transition: 0.3s linear;
+}
+
+.aboutCard a {
+    font-size: 15px;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+.aboutCard a i {
+    color: var(--primaryColor);
+    margin-left: 0.5rem;
+    transition: 0.3s linear;
+}
+
+
+/*----- About Styling End -----*/
+
+
+
+
+
+/*----- Services Styling Start -----*/
+
+.services {
+    /* background: var(--primaryColor); */
+    color: #fff;
+    background: url(../images/servicesBg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 5rem 0rem;
+}
+
+.servicesCards {
+    padding: 0rem 2rem;
+}
+
+.serviceCard {
+    text-align: center;
+    box-shadow: -1px 5px 8px #f014142b;
+    border: 2px solid #DBEDFF;
+    border-radius: 1rem;
+    position: relative;
+    margin: 1rem 0rem;
+    transition: 0.3s linear;
+}
+
+.serviceCard:hover {
+    box-shadow: none;
+}
+
+.serviceCardContent {
+    background: #F2FBFF;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s linear;
+}
+
+.serviceCard:hover .serviceCardContent {
+    background: var(--primaryColor);
+}
+
+.serviceCard img {
+    width: auto;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s linear;
+}
+
+.serviceCard:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.serviceCardTitle {
+    transition: 0.3s linear;
+    position: relative;
+    margin: 0.5rem 0rem;
+}
+
+.serviceCardTitle h4 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+.serviceCard:hover .serviceCardTitle h4 {
+    color: #fff;
+}
+
+
+.serviceCardTitle h4::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: var(--secondaryColor);
+    width: 20%;
+    height: 3px;
+    border-radius: 99px;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: 0.3s linear;
+}
+
+.serviceCard:hover h4::after {
+    color: #fff;
+}
+
+.serviceCard:hover .serviceCardTitle h4::after {
+    background: #fff;
+}
+
+.serviceCard a {
+    font-size: 15px;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+.serviceCard a i {
+    color: var(--primaryColor);
+    margin-left: 0.5rem;
+    transition: 0.3s linear;
+}
+
+.serviceCard:hover .serviceCardTitle, .serviceCard:hover a, .serviceCard:hover a i {
+    color: #fff;
+}
+
+/*----- Services Styling End -----*/
+
+
+
+
+
+/*----- Contact Styling Start -----*/
+
+.contact {
+    background: url(../images/contactBg.png) #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contactDetails h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--secondaryColor);
+    margin: 0;
+}
+
+.contactDetails a {
+    font-family: 'League Spartan';
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+}
+
+/*----- Contact Styling End -----*/
+
+
+
+
+
+/*----- Pray Slide Styling Start -----*/
+
+.pray {
+    background: url(../images/prayBg.png) #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: top;
+}
+
+.pray .headingBar::before {
+    background: #fff;
+}
+
+.pray .headingBar::after {
+    background: #fff;
+}
+
+.pray .owl-carousel .owl-nav button {
+    background: none !important;
+}
+
+.pray .owl-carousel .owl-nav button:hover {
+    background: none !important;
+}
+
+.prayArrow {
+    font-size: 22px;
+    color: var(--secondaryColor);
+    transition: 0.3s linear;
+}
+
+.pray .owl-nav button:hover .prayArrow, .pray .owl-nav button:focus .prayArrow {
+    color: var(--primaryColor);
+}
+
+.pray .owl-nav button:hover, .owl-nav button:focus {
+    background: none !important;
+    outline: none;
+}
+
+.pray .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-200%, -50%);
+}
+
+.pray .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(200%, -50%);
+}
+
+/*----- Pray Slide Styling End -----*/
+
+
+
+
+
+/*----- Suubscription Styling Start -----*/
+
+.subscriptionCard {
+    background: #F1F8FF;
+    border: 2px dashed #519CE6;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: 0.3s linear;
+    height: calc(100% - 1rem);
+}
+
+.subscriptionCard:hover {
+    background: #0D559C;
+    color: #fff;
+}
+
+.subscriptionCardTitle {
+    background: var(--primaryColor);
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 1rem;
+}
+
+.subscriptionCardTitle h3 {
+    font-family: 'Gilroy' !important;
+    font-size: 25px !important;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+}
+
+.subscriptionCardContent {
+    padding: 1rem 2rem;
+}
+
+.subscriptionCardMain {
+    text-align: center;
+}
+
+.subscriptionPrice {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primaryColor);
+    margin: 0;
+    transition: 0.3s linear;
+}
+
+.subscriptionCard:hover .subscriptionPrice {
+    color: #fff;
+}
+
+.subscriptionCondition {
+    font-size: 18px;
+    line-height: 1;
+    margin: 1rem 0rem;
+    min-height: calc(18px*2);
+}
+
+.subscriptionFeatures ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subscriptionFeatures ul li i {
+    margin-right: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+/*----- Suubscription Styling End -----*/
+
+
+
+
+/*----- Blogs Styling Start -----*/
+
+.blogCard {
+    box-shadow: 0px 0px 8px 2px #0da57424;
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    transition: 0.3s linear;
+}
+
+.blogImage img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.blogDetails {
+    padding: 1rem 1rem;
+}
+
+.blogDate span {
+    font-size: 14px;
+    line-height: 1;
+    background: var(--secondaryColor);
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+}
+
+.blogTitle {
+    font-size: 20px;
+    margin: 0.5rem 0rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.blogContent {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/*----- Blogs Styling End -----*/
+
+
+
+
+
+/*----- Components Styling Start -----*/
+
+.owl-carousel .item {
+    padding: 0.5rem 0rem !important;
+}
+
+.owl-carousel .owl-nav button {
+    background: var(--secondaryColor) !important;
+    border-radius: 99px !important;
+    width: 30px;
+    height: 30px;
+    color: #fff !important;
+    transition: 0.3s linear;
+}
+
+.owl-carousel .owl-nav button:hover {
+    background: var(--primaryColor) !important;
+}
+
+.secondaryCorner {
+    position: relative;
+    z-index: 1;
+}
+
+.secondaryCorner::before {
+    content: '';
+    position: absolute;
+    background: url(../images/corner.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -20px;
+    left: -15px;
+    width: 30%;
+    height: 30%;
+    z-index: -1;
+    transition: 0.3s linear;
+}
+
+.secondaryCorner:hover::before {
+    transform: scale(1.1);
+}
+
+.primaryShade {
+    position: relative;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.primaryShade::before {
+    content: '';
+    position: absolute;
+    background: var(--primaryColor);
+    width: 100%;
+    height: 100%;
+    bottom: -10px;
+    left: -10px;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.primaryShade img {
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.serviceBox {
+    margin-bottom: 1.5rem;
+}
+
+.serviceHeading {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.videoBox {
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 2px #0da57424;
+    padding: 0.4rem;
+    position: relative;
+}
+
+.videoBox video {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.playButton {
+    font-size: 12px;
+    line-height: 20px;
+    width: 40px;
+    height: 40px;
+    color: var(--primaryColor);
+    background: #fff;
+    outline: 8px solid var(--primaryColor);
+    outline-offset: -2px;
+    border-radius: 99px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s linear;
+}
+
+.playButton:hover {
+    color: var(--secondaryColor);
+    outline-color: var(--secondaryColor);
+}
+
+.audioBox {
+    text-align: center;
+    border: 1px solid #cfcfcf;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 2px #0da57424;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+}
+
+.searchBar {
+    position: relative;
+    border: 2px solid var(--primaryColor);
+    border-radius: 99px;
+    padding: 0.4rem 0rem;
+}
+
+.searchBar input {
+    background-color: #fff0;
+    font-weight: 400;
+    padding: 12px 200px 12px 15px;
+    font-size: 14px;
+    color: #000;
+    border: none;
+    resize: none;
+    position: relative;
+    width: 100%;
+    appearance: none;
+}
+
+.searchBar input::placeholder {
+    color: #000;
+}
+
+.searchBar input:focus {
+    outline: 0 !important
+}
+
+.searchBar button {
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0.2rem;
+}
+
+.detailBox {
+    margin: 1rem 0rem;
+}
+
+.detailHeader {
+    background: #F2FCFF;
+    padding: 0.8rem 1rem;
+}
+
+.detailHeader p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/*----- Components Styling End -----*/
+
+
+
+
+
+/*----- Responsive Styling Start -----*/
+
+@media(max-width: 1400px) {
+    .sectionTitle {
+        font-size: 40px;
+    }
+
+    .bannerHeading {
+        font-size: 46px;
+    }
+
+}
+
+@media(max-width: 1200px) {
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .services {
+        background: var(--primaryColor);
+        padding: 3rem 0rem;
+    }
+}
+
+@media(max-width: 991px) {
+    .pray .owl-nav {
+        display: none;
+    }
+
+    .subscriptionCardTitle {
+        padding: 0.6rem 1rem;
+    }
+
+    .subscriptionCardTitle h3 {
+        font-size: 22px !important;
+    }
+
+    .subscriptionCardContent {
+        padding: 1rem 1rem;
+    }
+
+    .subscriptionPrice {
+        font-size: 32px;
+    }
+
+    .subscriptionCondition {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+
+    .pageBanner {
+        min-height: 360px;
+    }
+
+    .mainButton {
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+
+    .mainLabel {
+        font-size: 15px;
+    }
+
+    .sectionTitle {
+        font-size: 32px;
+    }
+
+    .bannerHeading {
+        font-size: 40px;
+    }
+
+    .aboutCardContent {
+        padding: 1rem 1rem;
+    }
+
+    .aboutCardTitle {
+        font-size: 22px;
+    }
+
+    .aboutCard img {
+        height: 60px;
+    }
+
+    .serviceCard img {
+        height: 60px;
+    }
+
+    .contactDetails h3 {
+        font-size: 24px;
+    }
+
+    .contactDetails a {
+        font-size: 28px;
+    }
+
+    .newsletter input {
+        padding: 12px 180px 12px 15px;
+    }
+
+}
+
+@media(max-width: 575px) {
+    .navbar-brand img {
+        width: 90px;
+    }
+
+
+    .authButton {
+        font-size: 14px;
+        padding: 0.4rem 0.8rem !important;
+    }
+
+    .pageBanner {
+        min-height: 280px;
+        padding-bottom: 20px;
+    }
+
+    .mainButton {
+        font-size: 13px;
+        padding: 12px 20px;
+    }
+
+    .headingBar {
+        left: 10px;
+    }
+
+    .sectionTitle {
+        font-size: 28px;
+    }
+
+    .bannerHeading {
+        font-size: 32px;
+    }
+
+    .contactDetails h3 {
+        font-size: 22px;
+    }
+
+    .contactDetails a {
+        font-size: 24px;
+    }
+
+    .subscriptionCardTitle h3 {
+        font-size: 22px !important;
+    }
+
+    .subscriptionPrice {
+        font-size: 28px;
+    }
+
+    .blogTitle {
+        font-size: 18px;
+    }
+
+    .newsletter input {
+        padding: 8px 160px 8px 15px;
+    }
+}
+
+@media(max-width: 360px) {
+    .sectionTitle {
+        font-size: 24px;
+    }
+}
+
+/*----- Responsive Styling End -----*/
