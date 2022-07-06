@@ -596,33 +596,6 @@ footer {
     background-attachment: fixed;
 }
 
-.aboutImage {
-    height: 370px;
-    width: 320px;
-    display: inline-block;
-}
-
-.aboutImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.aboutImage1 {
-    position: relative;
-    z-index: 1;
-}
-
-.aboutImage2 {
-    border: 10px solid #DFEFFF;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    z-index: 2;
-    transform: translateX(50%);
-}
-
 .aboutCard {
     text-align: center;
     box-shadow: -1px 5px 8px #dbedff;
@@ -1067,6 +1040,29 @@ footer {
     background: var(--primaryColor) !important;
 }
 
+.primaryCorner {
+    position: relative;
+    z-index: 1;
+}
+
+.primaryCorner::before {
+    content: '';
+    position: absolute;
+    background: url(../images/primaryCorner.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -25px;
+    right: -15px;
+    width: 110px;
+    height: 110px;
+    z-index: -2;
+    transition: 0.3s linear;
+}
+
+.primaryCorner:hover::before {
+    transform: scale(1.1);
+}
+
 .secondaryCorner {
     position: relative;
     z-index: 1;
@@ -1075,14 +1071,14 @@ footer {
 .secondaryCorner::before {
     content: '';
     position: absolute;
-    background: url(../images/corner.png) no-repeat;
+    background: url(../images/secondaryCorner.png) no-repeat;
     background-size: contain;
     background-position: center;
     top: -20px;
     left: -15px;
-    width: 30%;
-    height: 30%;
-    z-index: -1;
+    width: 110px;
+    height: 110px;
+    z-index: -2;
     transition: 0.3s linear;
 }
 
@@ -1114,6 +1110,51 @@ footer {
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
+}
+
+.singleImage {
+    height: 370px;
+    width: 100%;
+    display: inline-block;
+    z-index: 2;
+}
+
+.singleImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 10px solid #DFEFFF;
+}
+
+.doubleImage {
+    height: 370px;
+    width: 320px;
+    display: inline-block;
+}
+
+.doubleImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.doubleImage1 {
+    position: relative;
+    z-index: 1;
+}
+
+.doubleImage2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.doubleImage2 img {
+    border: 10px solid #DFEFFF;
 }
 
 .serviceBox {
@@ -1222,6 +1263,14 @@ footer {
 .detailHeader p {
     font-size: 18px;
     margin: 0;
+}
+
+.detailContent {
+    padding: 0.8rem 1rem;
+}
+
+.detailContent p {
+    font-size: 15px;
 }
 
 
@@ -1342,7 +1391,6 @@ footer {
         width: 90px;
     }
 
-
     .authButton {
         font-size: 14px;
         padding: 0.4rem 0.8rem !important;
@@ -1368,6 +1416,11 @@ footer {
 
     .bannerHeading {
         font-size: 32px;
+    }
+
+    .doubleImage {
+        height: 300px;
+        width: 220px;
     }
 
     .contactDetails h3 {

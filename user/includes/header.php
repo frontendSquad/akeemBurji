@@ -50,7 +50,7 @@
                                                     <a class="nav-link active" href="../home/">Home</a>
                                                 </li>
                                                 <li class="nav-item dropdown">
-                                                    <button type="button" class="nav-link navButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button type="button" class="nav-link navButton dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                         Services
                                                     </button>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -65,7 +65,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="nav-item dropdown">
-                                                    <button type="button" class="nav-link navButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button type="button" class="nav-link navButton dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                         Explore
                                                     </button>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -117,21 +117,13 @@
                                                                 Resources
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Prayer Warriors</a></li>
-                                                                <li><a class="dropdown-item" href="#">Music & Teach Team</a></li>
-                                                                <li><a class="dropdown-item" href="#">Kids/Children</a></li>
-                                                                <li><a class="dropdown-item" href="#">Youth</a></li>
-                                                                <li><a class="dropdown-item" href="#">Ladies</a></li>
-                                                                <li class="nav-item dropend">
-                                                                    <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                                                                        Men
-                                                                    </button>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><a class="dropdown-item" href="#">Hear Our Teachings</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Artists</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Outreach</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/prayer-warriors.php">Prayer Warriors</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/music-tech.php">Music & Teach Team</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/kids-children.php">Kids/Children</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/youth.php">Youth</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/ladies.php">Ladies</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/men.php">Men</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/outreach.php">Outreach</a></li>
                                                                 <li><a class="dropdown-item" href="#">World Mission</a></li>
                                                                 <li><a class="dropdown-item" href="#">Media</a></li>
                                                                 <li><a class="dropdown-item" href="#">Video Statement</a></li>

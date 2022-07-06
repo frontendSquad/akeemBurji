@@ -5,7 +5,7 @@ videoBoxes.forEach(videoBox => {
     let myVideo = videoBox.querySelector('.video');
     playButton.addEventListener('click', function() {
         playButton.classList.add('d-none');
-         myVideo.setAttribute("controls","controls")
+         myVideo.setAttribute("controls","true")
         myVideo.play();
     });
 });
@@ -13,6 +13,7 @@ videoBoxes.forEach(videoBox => {
 
 
 
+/*----- Dropdown -----*/
 document.addEventListener("DOMContentLoaded", function(){
         
 
@@ -22,8 +23,6 @@ document.addEventListener("DOMContentLoaded", function(){
           e.stopPropagation();
         });
     })
-
-
 
     // make it as accordion for smaller screens
     if (window.innerWidth < 992) {

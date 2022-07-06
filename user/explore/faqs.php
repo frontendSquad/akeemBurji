@@ -24,6 +24,46 @@ include('../includes/pageBanner.php');
                         </div>
                     </div>
                 </div>
+                <div class="detailBoxes">
+                    <div class="detailBox">
+                        <div class="detailHeader">
+                            <p>Lorem Ipsum is simply dummy text of the printing specimen this mt too book. </p>
+                        </div>
+                        <div class="detailContent">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detailBoxes">
+                    <div class="detailBox">
+                        <div class="detailHeader">
+                            <p>Lorem Ipsum is simply dummy text of the printing specimen this mt too book. </p>
+                        </div>
+                        <div class="detailContent">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detailBoxes">
+                    <div class="detailBox">
+                        <div class="detailHeader">
+                            <p>Lorem Ipsum is simply dummy text of the printing specimen this mt too book. </p>
+                        </div>
+                        <div class="detailContent">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detailBoxes">
+                    <div class="detailBox">
+                        <div class="detailHeader">
+                            <p>Lorem Ipsum is simply dummy text of the printing specimen this mt too book. </p>
+                        </div>
+                        <div class="detailContent">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

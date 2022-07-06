@@ -47,17 +47,17 @@ include('../includes/header.php');
 <section class="about py-5">
     <div class="container">
         <div class="row align-items-center mb-3">
-            <div class="col-xl-6">
-                <div class="position-relative pb-5 mb-3">
-                    <figure class="aboutImage aboutImage1 secondaryCorner">
-                        <img src="../assets/images/aboutImage1.jpg" alt="">
+            <div class="col-xl-6 mb-3">
+                <div class="position-relative pb-5">
+                    <figure class="doubleImage doubleImage1 secondaryCorner">
+                        <img src="../assets/images/doubleImage1.jpg" alt="">
                     </figure>
-                    <figure class="aboutImage aboutImage2">
-                        <img src="../assets/images/aboutImage2.jpg" alt="">
+                    <figure class="doubleImage doubleImage2">
+                        <img src="../assets/images/doubleImage2.jpg" alt="">
                     </figure>
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 mb-3">
                 <h2 class="sectionTitle headingBar">Who We Are</h2>
                 <p class="primaryColor">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
