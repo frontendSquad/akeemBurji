@@ -404,6 +404,7 @@ include('../includes/header.php');
                             <span>August 30, 2021</span>
                         </div>
                         <h4 class="blogTitle">Lorem Ipsum Is Simply Dummy Tke The A Type Specimen Book. </h4>
+                        <hr class="w-25">
                         <p class="blogContent">Lorem Ipsum is simply dummy text of the it to make a type specimen book. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur praesentium esse nemo quasi eum facilis maiores quas quos illo obcaecati.</p>
                         <a href="#" class="moreLink">More Details<i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
@@ -419,6 +420,7 @@ include('../includes/header.php');
                             <span>August 30, 2021</span>
                         </div>
                         <h4 class="blogTitle">Lorem Ipsum Is Simply Dummy Tke The A Type Specimen Book. </h4>
+                        <hr class="w-25">
                         <p class="blogContent">Lorem Ipsum is simply dummy text of the it to make a type specimen book. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur praesentium esse nemo quasi eum facilis maiores quas quos illo obcaecati.</p>
                         <a href="#" class="moreLink">More Details<i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
@@ -434,6 +436,7 @@ include('../includes/header.php');
                             <span>August 30, 2021</span>
                         </div>
                         <h4 class="blogTitle">Lorem Ipsum Is Simply Dummy Tke The A Type Specimen Book. </h4>
+                        <hr class="w-25">
                         <p class="blogContent">Lorem Ipsum is simply dummy text of the it to make a type specimen book. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur praesentium esse nemo quasi eum facilis maiores quas quos illo obcaecati.</p>
                         <a href="#" class="moreLink">More Details<i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>

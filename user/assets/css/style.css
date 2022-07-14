@@ -77,9 +77,10 @@ section {
 }
 
 .imageBg {
-    background: url('../images/aboutbg.png') #fff;
+    background: url(../images/aboutbg.png) #fff;
     background-repeat: no-repeat;
     background-position: right center;
+    background-attachment: fixed;
 }
 
 .lightBg {
@@ -116,6 +117,11 @@ section {
     font-weight: 400;
 }
 
+.secondaryTitle {
+    font-size: 32px;
+    font-weight: 400;
+}
+
 .siteList li {
     position: relative;
     left: -1rem;
@@ -131,7 +137,6 @@ section {
     font-size: 1rem;
 }
 
-
 .moreLink {
     font-size: 15px;
     color: #000;
@@ -142,6 +147,24 @@ section {
     color: var(--primaryColor);
     margin-left: 0.5rem;
     transition: 0.3s linear;
+}
+
+.primaryCard {
+    background: #EEFEFF;
+    border: 1px solid #D4F2FF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
+    padding: 2rem 1.5rem;
+    margin: 1rem 0.5rem;
+    display: block;
+    position: relative;
+}
+
+.secondaryCard {
+    box-shadow: 0px 0px 8px 2px #0da57424;
+    border-radius: 20px;
+    background: #fff;
+    position: relative;
 }
 
 /*----- General Styling End -----*/
@@ -298,6 +321,65 @@ header {
     border: none;
 }
 
+.navSide .dropdown-menu {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 0;
+}
+
+.navSide .navDropdown, .navDropend {
+    position: relative;
+}
+
+.navSide .navDropdown:hover>.navDropdownContent, .navSide .navDropend:hover>.navDropendContent {
+    display: inline-block;
+}
+
+.navSide .navDropdownContent li {
+    list-style: none;
+}
+
+.navSide .navDropContent {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 0;
+    display: none;
+    position: absolute;
+}
+
+.navSide .navDropContent {
+    top: 100%;
+    left: 0;
+}
+
+.navSide .navDropend .navDropContent {
+    top: 0;
+    right: auto;
+    left: 100%;
+}
+
+.navSide .navDropend>.dropdown-toggle::after {
+    transform: rotate(0deg);
+    transition: 0.3s linear;
+}
+
+.navSide .navDropend:hover>.dropdown-toggle::after {
+    transform: rotate(-90deg);
+}
+
+.navSide .dropdown-item {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: 0.3s linear;
+}
+
+.navSide .dropdown-item:focus, .navSide .dropdown-item:hover {
+    color: #fff;
+    background-color: var(--primaryColor);
+}
+
 .authBox {
     border: 1px solid #0080FF;
     border-radius: 99px;
@@ -380,49 +462,27 @@ header {
     transform: rotate(360deg);
 }
 
-.navSide .dropdown-menu {
-    border: 2px solid #fff;
-    border-radius: 5px;
-    background: #f2f2f2;
-    padding: 0;
-}
-
-.navSide .dropend .dropdown-menu {
-    margin-left: 0.3rem;
-}
-
-.navSide .dropend .dropdown-toggle::after {
-    transform: rotate(90deg);
-    transition: 0.3s linear;
-}
-
-.navSide .dropend .dropdown-toggle.show::after {
-    transform: rotate(0deg);
-}
-
-.navSide .dropdown-item {
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    transition: 0.3s linear;
-}
-
-.navSide .dropdown-item:focus, .navSide .dropdown-item:hover {
-    color: #fff;
-    background-color: var(--primaryColor);
-}
-
-.navSide .offcanvas.show .dropdown-menu {
-    border: none;
+.navSide .offcanvas.show .navDropContent {
     background: #fff0;
+    position: relative;
+    border: none;
+    left: 0;
+    margin-bottom: 0.5rem;
 }
 
-.navSide .offcanvas.show .dropdown-item {
+.navSide .offcanvas.show .navDropdownContent .dropdown-item {
     font-size: 14px;
     color: #fff;
     border-bottom: none !important;
     text-indent: 1rem;
     padding: 0.2rem 1rem;
 }
+
+.navSide .offcanvas.show .navDropendContent .dropdown-item {
+    text-indent: 2rem;
+}
+
+
 
 /*----- Header Styling End -----*/
 
@@ -847,6 +907,13 @@ footer {
     background: #fff;
 }
 
+.praySlide img {
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .pray .owl-carousel .owl-nav button {
     background: none !important;
 }
@@ -968,12 +1035,18 @@ footer {
 /*----- Blogs Styling Start -----*/
 
 .blogCard {
+    display: block;
+    background: #fff;
     box-shadow: 0px 0px 8px 2px #0da57424;
     border-radius: 1rem;
     position: relative;
     margin-bottom: 1rem;
     padding: 0.8rem;
     transition: 0.3s linear;
+}
+
+.blogCard * {
+    color: #000;
 }
 
 .blogImage img {
@@ -999,6 +1072,7 @@ footer {
 .blogTitle {
     font-size: 20px;
     margin: 0.5rem 0rem;
+    color: #000;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1008,11 +1082,63 @@ footer {
 
 .blogContent {
     font-size: 15px;
+    color: #000;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+
+.blogTitleDetail {
+    font-size: 22px;
+    margin: 0.5rem 0rem;
+    color: #000;
+}
+
+.secondaryBlogCard {
+    display: flex;
+    align-items: center;
+}
+
+.secondaryBlogCard .blogImage {
+    flex-shrink: 0;
+}
+
+.secondaryBlogCard .blogImage img {
+    height: 180px;
+}
+
+.recommendedBlogCard {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.recommendedBlogCard .blogImage {
+    flex-shrink: 0;
+}
+
+.recommendedBlogCard .blogImage img {
+    height: 120px;
+}
+
+.recommendedBlogCard .blogDetails {
+    padding: 0.5rem 0.5rem;
+}
+
+.recommendedBlogCard .blogTitle {
+    font-size: 16px;
+}
+
+.recommendedBlogCard .blogContent {
+    font-size: 14px;
+}
+
+.recommendedBlogCard hr {
+    margin: 0.5rem 0;
 }
 
 /*----- Blogs Styling End -----*/
@@ -1168,15 +1294,17 @@ footer {
 
 .videoBox {
     text-align: center;
+    background: #fff;
     border-radius: 1rem;
     box-shadow: 0px 0px 8px 2px #0da57424;
     padding: 0.4rem;
+    margin: 1rem;
     position: relative;
 }
 
 .videoBox video {
-    height: 220px;
     width: 100%;
+    aspect-ratio: 16/9;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
@@ -1206,16 +1334,48 @@ footer {
 
 .audioBox {
     text-align: center;
-    border: 1px solid #cfcfcf;
+    background: #fff;
     border-radius: 1rem;
-    box-shadow: 0px 0px 8px 2px #0da57424;
+    box-shadow: 2px 2px 8px 2px #0da57424;
     padding: 1rem;
     margin: 1rem;
     position: relative;
 }
 
+.owl-carousel .audioBox img {
+    height: fit-content;
+}
+
+.artist {
+    text-align: center;
+}
+
+.artist img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 999px;
+}
+
+.artist h4 {
+    margin: 0.5rem;
+}
+
+.book {
+    margin: 1rem 0.5rem;
+}
+
+.book img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .searchBar {
     position: relative;
+    background: #fff;
     border: 2px solid var(--primaryColor);
     border-radius: 99px;
     padding: 0.4rem 0rem;
@@ -1224,7 +1384,7 @@ footer {
 .searchBar input {
     background-color: #fff0;
     font-weight: 400;
-    padding: 12px 200px 12px 15px;
+    padding: 12px 160px 12px 15px;
     font-size: 14px;
     color: #000;
     border: none;
@@ -1251,6 +1411,10 @@ footer {
     margin: 0.2rem;
 }
 
+.searchBar button i {
+    margin-left: 0.5rem;
+}
+
 .detailBox {
     margin: 1rem 0rem;
 }
@@ -1273,6 +1437,120 @@ footer {
     font-size: 15px;
 }
 
+.testimonial {
+    background: #EEFEFF;
+    border: 1px solid #D4F2FF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 1rem 0.5rem;
+}
+
+.testimonialImage img {
+    height: 70px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 99px;
+}
+
+.testimonialName {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.testimonial p {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.job {
+    background: #EEFEFF;
+    border: 1px solid #D4F2FF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
+    padding: 2rem 1.5rem;
+    margin: 1rem 0.5rem;
+    display: block;
+    transition: 0.3s linear;
+}
+
+.jobTitle {
+    font-size: 24px;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+.jobLocation {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    transition: 0.3s linear;
+}
+
+.jobLocation i {
+    color: var(--primaryColor);
+    margin-right: 0.5rem;
+    transition: 0.3s linear;
+}
+
+.job:hover {
+    background: var(--primaryColor);
+}
+
+.job:hover * {
+    color: #fff;
+}
+
+.paginationWrap {
+    border-top: 1px solid #707070;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.paginationWrap .pagination {
+    box-shadow: 0px 0px 5px #e0e0e0;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+.paginationWrap .pagination .page-item .page-link {
+    color: #000;
+    border: 1px solid #FFD4D4;
+    border-radius: 0 !important;
+    padding: 0.5rem 1rem;
+}
+
+.paginationWrap .pagination .page-item:first-child .page-link {
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+}
+
+.paginationWrap .pagination .page-item:last-child .page-link {
+    color: var(--primaryColor);
+    border-top-right-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+}
+
+.paginationWrap .pagination .page-item.active .page-link {
+    color: var(--primaryColor);
+    color: #fff;
+    background: var(--primaryColor);
+}
+
+.rating .rated {
+    color: var(--primaryColor);
+}
+
+.rating .unrated {
+    color: #666;
+}
+
 
 /*----- Components Styling End -----*/
 
@@ -1285,6 +1563,10 @@ footer {
 @media(max-width: 1400px) {
     .sectionTitle {
         font-size: 40px;
+    }
+
+    .secondaryTitle {
+        font-size: 30px;
     }
 
     .bannerHeading {
@@ -1332,7 +1614,7 @@ footer {
 
 @media(max-width: 767px) {
     body {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .pageBanner {
@@ -1350,6 +1632,10 @@ footer {
 
     .sectionTitle {
         font-size: 32px;
+    }
+
+    .secondaryTitle {
+        font-size: 28px;
     }
 
     .bannerHeading {
@@ -1372,6 +1658,14 @@ footer {
         height: 60px;
     }
 
+    .secondaryBlogCard {
+        display: block;
+    }
+
+    .recommendedBlogCard {
+        display: block;
+    }
+
     .contactDetails h3 {
         font-size: 24px;
     }
@@ -1381,7 +1675,11 @@ footer {
     }
 
     .newsletter input {
-        padding: 12px 180px 12px 15px;
+        padding: 10px 180px 10px 15px;
+    }
+
+    .searchBar input {
+        padding: 10px 140px 10px 15px;
     }
 
 }
@@ -1412,6 +1710,10 @@ footer {
 
     .sectionTitle {
         font-size: 28px;
+    }
+
+    .secondaryTitle {
+        font-size: 26px;
     }
 
     .bannerHeading {
@@ -1451,6 +1753,10 @@ footer {
 @media(max-width: 360px) {
     .sectionTitle {
         font-size: 24px;
+    }
+
+    .secondaryTitle {
+        font-size: 22px;
     }
 }
 

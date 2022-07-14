@@ -36,6 +36,7 @@
                                 <a class="navbar-brand" href="../home/">
                                     <img src="../assets/images/logo.png" alt="">
                                 </a>
+
                                 <div class="navSide">
                                     <button class="navbar-toggler offcanvasButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                         <i class="fas fa-bars"></i>
@@ -49,11 +50,12 @@
                                                 <li class="nav-item">
                                                     <a class="nav-link active" href="../home/">Home</a>
                                                 </li>
-                                                <li class="nav-item dropdown">
-                                                    <button type="button" class="nav-link navButton dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                                <li class="nav-item navDropdown">
+                                                    <button type="button" class="nav-link navButton dropdown-toggle">
                                                         Services
                                                     </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <ul class="navDropContent navDropdownContent ">
                                                         <li><a class="dropdown-item" href="../services/sunday-services.php">Sunday Services</a></li>
                                                         <li><a class="dropdown-item" href="../services/weekday-services.php">Weekday Services</a></li>
                                                         <li><a class="dropdown-item" href="../services/prayer.php">Prayer</a></li>
@@ -64,33 +66,35 @@
                                                         <li><a class="dropdown-item" href="../services/funeral.php">Funeral</a></li>
                                                     </ul>
                                                 </li>
-                                                <li class="nav-item dropdown">
-                                                    <button type="button" class="nav-link navButton dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                                <li class="nav-item navDropdown">
+                                                    <button type="button" class="nav-link navButton dropdown-toggle">
                                                         Explore
                                                     </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <ul class="navDropContent navDropdownContent ">
                                                         <li><a class="dropdown-item" href="#">COVID - 19</a></li>
                                                         <li><a class="dropdown-item" href="#">Recommended Blogs</a></li>
-                                                        <li><a class="dropdown-item" href="#">We Believe Statement</a></li>
-                                                        <li><a class="dropdown-item" href="#">Our Story</a></li>
-                                                        <li><a class="dropdown-item" href="#">Statement of Faith</a></li>
-                                                        <li class="nav-item dropend">
-                                                            <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                                        <li><a class="dropdown-item" href="../explore/we-believe-statement.php">We Believe Statement</a></li>
+                                                        <li><a class="dropdown-item" href="../explore/our-story.php">Our Story</a></li>
+                                                        <li><a class="dropdown-item" href="../explore/statement-of-faith.php">Statement of Faith</a></li>
+                                                        <li class="nav-item navDropend">
+                                                            <button type="button" class="dropdown-item navButton dropdown-toggle">
                                                                 Who We Are
                                                             </button>
-                                                            <ul class="dropdown-menu">
+                                                            <ul class="navDropContent navDropendContent ">
                                                                 <li><a class="dropdown-item" href="#">COVID - 19</a></li>
-                                                                <li><a class="dropdown-item" href="#">Recommended Blogs</a></li>
-                                                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                                                                <li><a class="dropdown-item" href="#">Careers</a></li>
-                                                                <li><a class="dropdown-item" href="#">Blog</a></li>
-                                                                <li class="nav-item dropend">
-                                                                    <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                                                                        Audios
+                                                                <li><a class="dropdown-item" href="../explore/staff-volunteers.php">Staff & Volunteers</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/recommendations.php">Recommendations</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/testimonials.php">Testimonials</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/careers.php">Careers</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/blogs.php">Blogs</a></li>
+                                                                <li class="nav-item navDropend">
+                                                                    <button type="button" class="dropdown-item navButton dropdown-toggle">
+                                                                        Audio
                                                                     </button>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><a class="dropdown-item" href="#">Hear Our Teachings</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Artists</a></li>
+                                                                    <ul class="navDropContent navDropendContent ">
+                                                                        <li><a class="dropdown-item" href="../explore/audio-teachings.php">Hear Our Teachings</a></li>
+                                                                        <li><a class="dropdown-item" href="../explore/artists.php">Artists</a></li>
                                                                     </ul>
                                                                 </li>
                                                                 <li><a class="dropdown-item" href="#">Sermon Notes</a></li>
@@ -99,24 +103,25 @@
                                                                 <li><a class="dropdown-item" href="#">Organization Structure</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="#">Mission Statement</a></li>
-                                                        <li><a class="dropdown-item" href="#">Vision Statement</a></li>
-                                                        <li><a class="dropdown-item" href="#">Convenant Statement</a></li>
-                                                        <li class="nav-item dropend">
-                                                            <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                                        <li><a class="dropdown-item" href="../explore/mission-statement.php">Mission Statement</a></li>
+                                                        <li><a class="dropdown-item" href="../explore/vision-statement.php">Vision Statement</a></li>
+                                                        <li><a class="dropdown-item" href="../explore/convenant-statement.php">Convenant Statement</a></li>
+                                                        <li><a class="dropdown-item" href="../explore/leadership.php">Leadership</a></li>
+                                                        <li class="nav-item navDropend">
+                                                            <button type="button" class="dropdown-item navButton dropdown-toggle">
                                                                 Ministries
                                                             </button>
-                                                            <ul class="dropdown-menu">
+                                                            <ul class="navDropContent navDropendContent ">
                                                                 <li><a class="dropdown-item" href="#">COVID - 19</a></li>
                                                                 <li><a class="dropdown-item" href="#">COVID - 19</a></li>
                                                             </ul>
                                                         </li>
                                                         <li><a class="dropdown-item" href="../explore/faqs.php">FAQs</a></li>
-                                                        <li class="nav-item dropend">
-                                                            <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                                        <li class="nav-item navDropend">
+                                                            <button type="button" class="dropdown-item navButton dropdown-toggle">
                                                                 Resources
                                                             </button>
-                                                            <ul class="dropdown-menu">
+                                                            <ul class="navDropContent navDropendContent ">
                                                                 <li><a class="dropdown-item" href="../explore/prayer-warriors.php">Prayer Warriors</a></li>
                                                                 <li><a class="dropdown-item" href="../explore/music-tech.php">Music & Teach Team</a></li>
                                                                 <li><a class="dropdown-item" href="../explore/kids-children.php">Kids/Children</a></li>
@@ -124,53 +129,40 @@
                                                                 <li><a class="dropdown-item" href="../explore/ladies.php">Ladies</a></li>
                                                                 <li><a class="dropdown-item" href="../explore/men.php">Men</a></li>
                                                                 <li><a class="dropdown-item" href="../explore/outreach.php">Outreach</a></li>
-                                                                <li><a class="dropdown-item" href="#">World Mission</a></li>
-                                                                <li><a class="dropdown-item" href="#">Media</a></li>
-                                                                <li><a class="dropdown-item" href="#">Video Statement</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/world-mission.php">World Mission</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/media.php">Media</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/video-statement.php">Video Statement</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li class="nav-item dropend">
-                                                            <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                                        <li class="nav-item navDropend">
+                                                            <button type="button" class="dropdown-item navButton dropdown-toggle">
                                                                 Our Locations
                                                             </button>
-                                                            <ul class="dropdown-menu">
+                                                            <ul class="navDropContent navDropendContent">
                                                                 <li><a class="dropdown-item" href="#">COVID - 19</a></li>
                                                                 <li><a class="dropdown-item" href="#">COVID - 19</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li class="nav-item dropend">
-                                                            <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                                                                Funeral Services
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">COVID - 19</a></li>
-                                                                <li><a class="dropdown-item" href="#">COVID - 19</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="nav-item dropend">
-                                                            <button type="button" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                                                                Memorial Services
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">COVID - 19</a></li>
-                                                                <li><a class="dropdown-item" href="#">COVID - 19</a></li>
-                                                            </ul>
-                                                        </li>
-
                                                     </ul>
                                                 </li>
+
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" href="#">Subscriptions</a>
+                                                    <a class="nav-link active" href="../home/">Subscription</a>
                                                 </li>
+
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" href="#">Request Forms</a>
+                                                    <a class="nav-link active" href="../home/">Request Forms</a>
                                                 </li>
+
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" href="#">Events</a>
+                                                    <a class="nav-link active" href="../home/">Events</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="../home/">Contact Us</a>
                                                 </li>
 
                                             </ul>
-
                                         </div>
                                     </div>
 
@@ -203,8 +195,8 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
                         </nav>
 

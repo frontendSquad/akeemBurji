@@ -92,6 +92,9 @@ $('.pray-slide').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
+            items: 1,
+        },
+        565: {
             items: 2,
         },
         767: {
@@ -125,6 +128,58 @@ $('.seeWork-slide').owlCarousel({
         },
         991: {
             items: 3,
+        },
+    }
+});
+
+$('.videoTeaching-slide').owlCarousel({
+    loop: true,
+    margin: 20,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    navText: [
+        '<i class="fas fa-long-arrow-alt-left"></i>',
+        '<i class="fas fa-long-arrow-alt-right"></i>',
+    ],
+    autoplay: true,
+    autoplayTimeout:3000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        575: {
+            items: 2,
+        },
+        991: {
+            items: 3,
+        },
+    }
+});
+
+$('.audioTeaching-slide').owlCarousel({
+    loop: true,
+    margin: 20,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    navText: [
+        '<i class="fas fa-long-arrow-alt-left"></i>',
+        '<i class="fas fa-long-arrow-alt-right"></i>',
+    ],
+    autoplay: true,
+    autoplayTimeout:3000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        575: {
+            items: 2,
+        },
+        991: {
+            items: 4,
         },
     }
 });

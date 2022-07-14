@@ -31,7 +31,7 @@ include('../includes/pageBanner.php');
                 </ul>
             </div>
         </div>
-        <div class="row align-items-center mb-3">
+        <div class="row align-items-center flex-column-reverse flex-xl-row mb-3">
             <div class="col-xl-6 mb-4">
                 <h2 class="sectionTitle headingBar">What To Expect</h2>
                 <p class="primaryColor">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
