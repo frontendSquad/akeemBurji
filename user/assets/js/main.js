@@ -183,3 +183,29 @@ $('.audioTeaching-slide').owlCarousel({
         },
     }
 });
+
+$('.artist-slide').owlCarousel({
+    loop: true,
+    margin: 20,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    navText: [
+        '<i class="fas fa-long-arrow-alt-left"></i>',
+        '<i class="fas fa-long-arrow-alt-right"></i>',
+    ],
+    autoplay: true,
+    autoplayTimeout:3000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 2,
+        },
+        575: {
+            items: 3,
+        },
+        991: {
+            items: 4,
+        },
+    }
+});

@@ -122,6 +122,11 @@ section {
     font-weight: 400;
 }
 
+.detailTitle {
+    font-size: 24px;
+    font-weight: 400;
+}
+
 .siteList li {
     position: relative;
     left: -1rem;
@@ -150,21 +155,82 @@ section {
 }
 
 .primaryCard {
+    display: block;
     background: #EEFEFF;
     border: 1px solid #D4F2FF;
     border-radius: 20px;
     box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
     padding: 2rem 1.5rem;
     margin: 1rem 0.5rem;
-    display: block;
     position: relative;
+    transition: 0.3s linear;
+}
+
+.primaryCardTitle {
+    font-size: 24px;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+.primaryCardIcon {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    transition: 0.3s linear;
+}
+
+.primaryCardIcon i {
+    color: var(--primaryColor);
+    margin-right: 0.5rem;
+    transition: 0.3s linear;
+}
+
+a.primaryCard:hover {
+    background: var(--primaryColor);
+}
+
+a.primaryCard:hover * {
+    color: #fff;
 }
 
 .secondaryCard {
+    background: #fff;
     box-shadow: 0px 0px 8px 2px #0da57424;
     border-radius: 20px;
-    background: #fff;
+    padding: 1rem;
     position: relative;
+}
+
+.secondaryCard img {
+    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.twoLines {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.threeLines {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.fourLines {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 /*----- General Styling End -----*/
@@ -194,7 +260,7 @@ section {
     content: '';
     position: absolute;
     background: #fff;
-    left: -80%;
+    left: -100%;
     top: 0;
     width: 100%;
     height: 80%;
@@ -204,7 +270,7 @@ section {
 }
 
 .mainButton:hover::before {
-    left: 80%;
+    left: 100%;
 }
 
 .primaryButton {
@@ -1320,6 +1386,7 @@ footer {
     outline: 8px solid var(--primaryColor);
     outline-offset: -2px;
     border-radius: 99px;
+    box-shadow: 0px 0px 0px 16px #0d5cab94;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1330,6 +1397,7 @@ footer {
 .playButton:hover {
     color: var(--secondaryColor);
     outline-color: var(--secondaryColor);
+    box-shadow: 0px 0px 0px 16px #f0141469;
 }
 
 .audioBox {
@@ -1359,7 +1427,9 @@ footer {
 }
 
 .artist h4 {
-    margin: 0.5rem;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0.5rem 0;
 }
 
 .book {
@@ -1469,44 +1539,6 @@ footer {
     -webkit-box-orient: vertical;
 }
 
-.job {
-    background: #EEFEFF;
-    border: 1px solid #D4F2FF;
-    border-radius: 20px;
-    box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
-    padding: 2rem 1.5rem;
-    margin: 1rem 0.5rem;
-    display: block;
-    transition: 0.3s linear;
-}
-
-.jobTitle {
-    font-size: 24px;
-    color: #000;
-    transition: 0.3s linear;
-}
-
-.jobLocation {
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    transition: 0.3s linear;
-}
-
-.jobLocation i {
-    color: var(--primaryColor);
-    margin-right: 0.5rem;
-    transition: 0.3s linear;
-}
-
-.job:hover {
-    background: var(--primaryColor);
-}
-
-.job:hover * {
-    color: #fff;
-}
-
 .paginationWrap {
     border-top: 1px solid #707070;
     padding-top: 2rem;
@@ -1551,6 +1583,42 @@ footer {
     color: #666;
 }
 
+.fileIcon {
+    font-size: 52px;
+    color: var(--primaryColor);
+}
+
+.downloadButton {
+    font-size: 16px;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 99px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: 0px 0px 0px 1px #f3f3f3;
+    transition: 0.3s linear;
+}
+
+.audioPlayerButton {
+    font-size: 16px;
+    color: #fff;
+    background: var(--primaryColor);
+    border: none;
+    border-radius: 99px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: 0px 0px 0px 1px #f3f3f3;
+    transition: 0.3s linear;
+}
+
+.audioPlayerButton:hover {
+    background: var(--secondaryColor);
+}
 
 /*----- Components Styling End -----*/
 
@@ -1609,6 +1677,10 @@ footer {
 
     .subscriptionCondition {
         font-size: 16px;
+    }
+
+    .artist h4 {
+        font-size: 20px;
     }
 }
 
@@ -1716,6 +1788,10 @@ footer {
         font-size: 26px;
     }
 
+    .detailTitle {
+        font-size: 22px;
+    }
+
     .bannerHeading {
         font-size: 32px;
     }
@@ -1748,6 +1824,10 @@ footer {
     .newsletter input {
         padding: 8px 160px 8px 15px;
     }
+
+    .artist h4 {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 360px) {
@@ -1757,6 +1837,10 @@ footer {
 
     .secondaryTitle {
         font-size: 22px;
+    }
+
+    .detailTitle {
+        font-size: 20px;
     }
 }
 

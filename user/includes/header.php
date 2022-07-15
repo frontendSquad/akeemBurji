@@ -27,7 +27,7 @@
 <body>
 
     <header>
-        <div class="headerWrapper userHeader">
+        <div class="headerWrapper guestHeader">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12">
@@ -97,9 +97,11 @@
                                                                         <li><a class="dropdown-item" href="../explore/artists.php">Artists</a></li>
                                                                     </ul>
                                                                 </li>
-                                                                <li><a class="dropdown-item" href="#">Sermon Notes</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/sermon-notes.php">Sermon Notes</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/sermon.php">Sermon</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/available-plans.php">Available Plans</a></li>
                                                                 <li><a class="dropdown-item" href="#">Audio Bible</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bible Versions</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/bible-versions.php">Bible Versions</a></li>
                                                                 <li><a class="dropdown-item" href="#">Organization Structure</a></li>
                                                             </ul>
                                                         </li>
@@ -139,8 +141,10 @@
                                                                 Our Locations
                                                             </button>
                                                             <ul class="navDropContent navDropendContent">
-                                                                <li><a class="dropdown-item" href="#">COVID - 19</a></li>
-                                                                <li><a class="dropdown-item" href="#">COVID - 19</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/shalom-church.php">Shalom Church</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/light-church.php">Light Church</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/bethsaida-church.php">Bethsaida Church</a></li>
+                                                                <li><a class="dropdown-item" href="../explore/house-of-prayer.php">A House Of Prayer For All Nations</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>

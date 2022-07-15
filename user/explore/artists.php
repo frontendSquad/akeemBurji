@@ -18,7 +18,7 @@ include('../includes/pageBanner.php');
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="owl-carousel owl-theme audioTeaching-slide">
+                    <div class="owl-carousel owl-theme artist-slide">
                         <div class="item">
                             <div class="artist">
                                 <img src="../assets/images/artist3.jpg" alt="">
@@ -54,7 +54,6 @@ include('../includes/pageBanner.php');
             </div>
         </div>
     </section>
-
 
     <section class="artistListing py-3 py-lg-5">
         <div class="container">
@@ -118,7 +117,7 @@ include('../includes/pageBanner.php');
                 <div class="col-12">
                     <div class="paginationWrap">
                         <div class="d-md-flex align-items-center justify-content-between">
-                            <p class="primaryColor">Showing 16 out of 20</p>
+                            <p class="primaryColor">Showing 8 out of 20</p>
                             <nav>
                                 <ul class="pagination justify-content-end">
                                     <li class="page-item"><a class="page-link" href="job-details.php" tabindex="-1" aria-disabled="true">Previous</a></li>
@@ -134,9 +133,8 @@ include('../includes/pageBanner.php');
             </div>
         </div>
     </section>
+
 </div>
-
-
 
 <?php
 include('../includes/footer.php');

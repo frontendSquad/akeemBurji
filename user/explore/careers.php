@@ -27,75 +27,75 @@ include('../includes/pageBanner.php');
             </div>
             <div class="row mb-4">
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <a href="job-details.php" class="job">
-                        <h3 class="jobTitle">Job Title Here</h3>
-                        <p class="jobLocation"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
+                    <a href="job-details.php" class="primaryCard">
+                        <h3 class="primaryCardTitle">Job Title Here</h3>
+                        <p class="primaryCardIcon"><i class="fas fa-map-marker-alt"></i>Abc Street Xyz Avnue 05 Floor </p>
                     </a>
                 </div>
             </div>
